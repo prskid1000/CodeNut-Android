@@ -857,7 +857,7 @@ class PostView extends StatelessWidget {
     return Consumer<Store>(builder: (context, store, child) {
       return Scaffold(
           body: Padding(
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 10),
+              padding: EdgeInsets.fromLTRB(20, 40, 20, 10),
               child: ListView(
                 children: <Widget>[
                   BottomNavigationBar(
@@ -1124,7 +1124,7 @@ class PostView extends StatelessWidget {
                     ),
                   ),
                   Container(
-                      padding: EdgeInsets.fromLTRB(10, 20, 20, 0),
+                      padding: EdgeInsets.fromLTRB(20, 40, 20, 10),
                       child: Text(
                         'Comments',
                         textAlign: TextAlign.start,
@@ -1135,14 +1135,14 @@ class PostView extends StatelessWidget {
                             color: Colors.green),
                       )),
                   Container(
-                    height: 350,
+                    height: 250,
                     padding: EdgeInsets.fromLTRB(10, 15, 10, 5),
                     child: ListView(
                       children: store.chatBuilder(context),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
+                    padding: EdgeInsets.fromLTRB(10, 20, 10, 20),
                     child: Row(
                       children: [
                         Container(
