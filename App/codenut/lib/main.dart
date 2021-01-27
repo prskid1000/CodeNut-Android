@@ -1135,7 +1135,7 @@ class PostView extends StatelessWidget {
                             color: Colors.green),
                       )),
                   Container(
-                    height: 380,
+                    height: 350,
                     padding: EdgeInsets.fromLTRB(10, 15, 10, 5),
                     child: ListView(
                       children: store.chatBuilder(context),
