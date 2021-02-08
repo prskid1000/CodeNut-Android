@@ -397,7 +397,7 @@ class Store extends ChangeNotifier {
                               borderRadius: new BorderRadius.all(
                                   new Radius.circular(20.0)),
                               color: Colors.black54),
-                          width: 300,
+                          width: 290,
                           height: 50,
                           child: Text(post[i]['question'],
                               style: new TextStyle(
@@ -423,7 +423,7 @@ class Store extends ChangeNotifier {
                               borderRadius: new BorderRadius.all(
                                   new Radius.circular(20.0)),
                               color: Colors.black54),
-                          width: 300,
+                          width: 290,
                           height: 100,
                           child: Text(post[i]['description'],
                               style: new TextStyle(
@@ -597,7 +597,7 @@ class Store extends ChangeNotifier {
                     ),
                     Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      width: 300,
+                      width: 290,
                       child: TextField(
                         controller: text,
                         decoration: InputDecoration(
@@ -1041,7 +1041,7 @@ class PostView extends StatelessWidget {
                                   Row(
                                     children: [
                                       Container(
-                                        width: 322,
+                                        width: 320,
                                         padding:
                                             EdgeInsets.fromLTRB(20, 10, 10, 10),
                                         child: TextFormField(
@@ -1060,7 +1060,7 @@ class PostView extends StatelessWidget {
                                   Row(
                                     children: [
                                       Container(
-                                        width: 322,
+                                        width: 320,
                                         padding:
                                             EdgeInsets.fromLTRB(20, 10, 10, 10),
                                         child: TextFormField(
