@@ -4,7 +4,7 @@
 
 ![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/1.jpg?raw=true)
 
-![2](https://github.com/prskid1000/CodeNut-Androidp/blob/main/Preview/2.jpg?raw=true)
+![2](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/2.jpg?raw=true)
 
 ![3](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/3.jpg?raw=true)
 
