@@ -390,20 +390,45 @@ class Store extends ChangeNotifier {
                 Row(
                   children: [
                     Container(
-                      width: 300,
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Click to View',
-                          hintText: post[i]['question'],
-                          hintStyle:
-                              TextStyle(fontSize: 18, color: Colors.white),
-                        ),
-                      ),
+                      child: Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                          decoration: new BoxDecoration(
+                              borderRadius: new BorderRadius.all(
+                                  new Radius.circular(20.0)),
+                              color: Colors.black54),
+                          width: 300,
+                          height: 50,
+                          child: Text(post[i]['question'],
+                              style: new TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w900))),
                     ),
+                  ],
+                ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Row(
+                  children: [
                     Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      child: Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                          decoration: new BoxDecoration(
+                              borderRadius: new BorderRadius.all(
+                                  new Radius.circular(20.0)),
+                              color: Colors.black54),
+                          width: 300,
+                          height: 100,
+                          child: Text(post[i]['description'],
+                              style: new TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w900))),
                     ),
                   ],
                 ),
@@ -464,9 +489,9 @@ class Store extends ChangeNotifier {
   }
 
   List<Widget> chatBuilder(BuildContext context) {
-    final TextEditingController text = TextEditingController();
     List<Widget> wid = [];
     for (int i = 0; i < current['comments'].length; i++) {
+      TextEditingController text = TextEditingController();
       wid.add(Card(
         child: Column(
           children: [
@@ -573,11 +598,10 @@ class Store extends ChangeNotifier {
                     Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       width: 300,
-                      child: TextFormField(
+                      child: TextField(
                         controller: text,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
-                          labelText: "Click To Read",
                           hintText: current['comments'][i]['comment'],
                           hintStyle:
                               TextStyle(fontSize: 18, color: Colors.white),
@@ -1024,7 +1048,6 @@ class PostView extends StatelessWidget {
                                           controller: text4,
                                           decoration: InputDecoration(
                                             border: OutlineInputBorder(),
-                                            labelText: 'Question',
                                             hintText: store.current['question'],
                                             hintStyle: TextStyle(
                                                 fontSize: 18,
@@ -1044,7 +1067,6 @@ class PostView extends StatelessWidget {
                                           controller: text5,
                                           decoration: InputDecoration(
                                             border: OutlineInputBorder(),
-                                            labelText: 'Description',
                                             hintText:
                                                 store.current['description'],
                                             hintStyle: TextStyle(
