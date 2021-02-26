@@ -321,7 +321,7 @@ class Store extends ChangeNotifier {
                       padding: EdgeInsets.fromLTRB(10, 15, 5, 15),
                       child: DecoratedBox(
                           decoration:
-                              const BoxDecoration(color: Colors.redAccent),
+                              const BoxDecoration(color: Colors.greenAccent),
                           child: Container(
                               padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
                               child: Row(children: [
@@ -330,11 +330,11 @@ class Store extends ChangeNotifier {
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                      color: Colors.black),
                                 ),
                                 DecoratedBox(
-                                    decoration: const BoxDecoration(
-                                        color: Colors.green),
+                                    decoration:
+                                        const BoxDecoration(color: Colors.red),
                                     child: Container(
                                       padding: EdgeInsets.fromLTRB(5, 0, 5, 0),
                                       child: Text(
@@ -355,7 +355,7 @@ class Store extends ChangeNotifier {
                       padding: EdgeInsets.fromLTRB(5, 15, 5, 15),
                       child: DecoratedBox(
                           decoration:
-                              const BoxDecoration(color: Colors.redAccent),
+                              const BoxDecoration(color: Colors.greenAccent),
                           child: Container(
                               padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
                               child: Row(children: [
@@ -364,11 +364,11 @@ class Store extends ChangeNotifier {
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                      color: Colors.black),
                                 ),
                                 DecoratedBox(
                                     decoration: const BoxDecoration(
-                                        color: Colors.green),
+                                        color: Colors.redAccent),
                                     child: Container(
                                       padding: EdgeInsets.fromLTRB(5, 0, 5, 0),
                                       child: Text(
@@ -392,16 +392,16 @@ class Store extends ChangeNotifier {
                     Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Container(
-                          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                          padding: EdgeInsets.fromLTRB(20, 15, 10, 10),
                           decoration: new BoxDecoration(
                               borderRadius: new BorderRadius.all(
-                                  new Radius.circular(20.0)),
-                              color: Colors.black54),
+                                  new Radius.circular(30.0)),
+                              color: Colors.white),
                           width: 290,
                           height: 50,
                           child: Text(post[i]['question'],
                               style: new TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontWeight: FontWeight.w900))),
                     ),
                   ],
@@ -418,16 +418,16 @@ class Store extends ChangeNotifier {
                     Container(
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                       child: Container(
-                          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                          padding: EdgeInsets.fromLTRB(20, 20, 10, 10),
                           decoration: new BoxDecoration(
                               borderRadius: new BorderRadius.all(
-                                  new Radius.circular(20.0)),
-                              color: Colors.black54),
+                                  new Radius.circular(30.0)),
+                              color: Colors.white),
                           width: 290,
                           height: 100,
                           child: Text(post[i]['description'],
                               style: new TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontWeight: FontWeight.w900))),
                     ),
                   ],
@@ -438,9 +438,10 @@ class Store extends ChangeNotifier {
                     Container(
                       padding: EdgeInsets.fromLTRB(5, 10, 10, 5),
                       child: RaisedButton(
-                        textColor: Colors.white,
-                        color: Colors.green[600],
-                        child: Text('Full View'),
+                        textColor: Colors.black,
+                        color: Colors.greenAccent,
+                        child:
+                            Text('Full View', style: TextStyle(fontSize: 19)),
                         onPressed: () {
                           navpost(
                               context, post[i]['question'], post[i]['author']);
@@ -467,9 +468,9 @@ class Store extends ChangeNotifier {
             title: Text(
               user[i]['userid'],
               style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white),
+                  color: Colors.black),
             ),
             contentPadding: EdgeInsets.fromLTRB(10, 0, 10, 0),
             hoverColor: Colors.greenAccent,
@@ -503,7 +504,7 @@ class Store extends ChangeNotifier {
                       padding: EdgeInsets.fromLTRB(20, 15, 5, 15),
                       child: DecoratedBox(
                           decoration:
-                              const BoxDecoration(color: Colors.redAccent),
+                              const BoxDecoration(color: Colors.greenAccent),
                           child: Container(
                               padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
                               child: Row(children: [
@@ -512,11 +513,11 @@ class Store extends ChangeNotifier {
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                      color: Colors.black),
                                 ),
                                 DecoratedBox(
                                     decoration: const BoxDecoration(
-                                        color: Colors.green),
+                                        color: Colors.redAccent),
                                     child: Container(
                                       padding: EdgeInsets.fromLTRB(5, 0, 5, 0),
                                       child: Text(
@@ -558,7 +559,7 @@ class Store extends ChangeNotifier {
                       padding: EdgeInsets.fromLTRB(5, 15, 5, 15),
                       child: DecoratedBox(
                           decoration:
-                              const BoxDecoration(color: Colors.redAccent),
+                              const BoxDecoration(color: Colors.greenAccent),
                           child: Container(
                               padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
                               child: Row(children: [
@@ -567,11 +568,11 @@ class Store extends ChangeNotifier {
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
-                                      color: Colors.white),
+                                      color: Colors.black),
                                 ),
                                 DecoratedBox(
                                     decoration: const BoxDecoration(
-                                        color: Colors.green),
+                                        color: Colors.redAccent),
                                     child: Container(
                                       padding: EdgeInsets.fromLTRB(5, 0, 5, 0),
                                       child: Text(
@@ -625,17 +626,17 @@ class Store extends ChangeNotifier {
                   children: [
                     Container(
                       height: 60,
-                      width: 150,
+                      width: 160,
                       padding: EdgeInsets.fromLTRB(50, 0, 20, 20),
                       child: Opacity(
                         opacity: (current['author'] == userId) ? 1 : 0,
                         child: RaisedButton(
-                            textColor: Colors.white,
+                            textColor: Colors.black,
                             color: (current['author'] == userId)
-                                ? Colors.green
+                                ? Colors.greenAccent
                                 : Colors.transparent,
                             child: (current['author'] == userId)
-                                ? Text('Delete')
+                                ? Text('Delete', style: TextStyle(fontSize: 19))
                                 : Text(''),
                             onPressed:
                                 (userId == current['comments'][i]['author'])
@@ -654,12 +655,12 @@ class Store extends ChangeNotifier {
                       child: Opacity(
                           opacity: (current['author'] == userId) ? 1 : 0,
                           child: RaisedButton(
-                              textColor: Colors.white,
+                              textColor: Colors.black,
                               color: (current['author'] == userId)
-                                  ? Colors.green
+                                  ? Colors.greenAccent
                                   : Colors.transparent,
                               child: (current['author'] == userId)
-                                  ? Text('Save')
+                                  ? Text('Save', style: TextStyle(fontSize: 19))
                                   : Text(''),
                               onPressed:
                                   (userId == current['comments'][i]['author'])
@@ -699,7 +700,8 @@ class Account extends StatelessWidget {
                         padding: EdgeInsets.all(10),
                         child: Text(
                           'CodeNut',
-                          style: TextStyle(fontSize: 36, color: Colors.green),
+                          style: TextStyle(
+                              fontSize: 36, color: Colors.greenAccent),
                         )),
                     Container(
                       padding: EdgeInsets.all(10),
@@ -729,9 +731,10 @@ class Account extends StatelessWidget {
                             width: 190,
                             padding: EdgeInsets.fromLTRB(40, 20, 10, 0),
                             child: RaisedButton(
-                              textColor: Colors.white,
-                              color: Colors.green,
-                              child: Text('Log In'),
+                              textColor: Colors.black,
+                              color: Colors.greenAccent,
+                              child: Text('Log In',
+                                  style: TextStyle(fontSize: 22)),
                               onPressed: () async {
                                 await store.setAuth(text.text, password.text);
                                 if (store.validUser == true) {
@@ -746,9 +749,10 @@ class Account extends StatelessWidget {
                             width: 160,
                             padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
                             child: RaisedButton(
-                              textColor: Colors.white,
-                              color: Colors.green,
-                              child: Text('Sign Up'),
+                              textColor: Colors.black,
+                              color: Colors.greenAccent,
+                              child: Text('Sign Up',
+                                  style: TextStyle(fontSize: 22)),
                               onPressed: () async {
                                 await store.addUser(text.text, password.text);
                                 if (store.validUser == true) {
@@ -916,7 +920,6 @@ class PostView extends StatelessWidget {
                     child: ListView(
                       children: <Widget>[
                         Card(
-                          color: Colors.black12,
                           child: Column(
                             children: [
                               Row(
@@ -928,7 +931,7 @@ class PostView extends StatelessWidget {
                                             EdgeInsets.fromLTRB(20, 15, 5, 15),
                                         child: DecoratedBox(
                                             decoration: const BoxDecoration(
-                                                color: Colors.redAccent),
+                                                color: Colors.greenAccent),
                                             child: Container(
                                                 padding: EdgeInsets.fromLTRB(
                                                     7, 5, 5, 5),
@@ -939,13 +942,13 @@ class PostView extends StatelessWidget {
                                                         fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.bold,
-                                                        color: Colors.white),
+                                                        color: Colors.black),
                                                   ),
                                                   DecoratedBox(
                                                       decoration:
                                                           const BoxDecoration(
-                                                              color:
-                                                                  Colors.green),
+                                                              color: Colors
+                                                                  .redAccent),
                                                       child: Container(
                                                         padding:
                                                             EdgeInsets.fromLTRB(
@@ -996,7 +999,7 @@ class PostView extends StatelessWidget {
                                             EdgeInsets.fromLTRB(5, 15, 5, 15),
                                         child: DecoratedBox(
                                             decoration: const BoxDecoration(
-                                                color: Colors.redAccent),
+                                                color: Colors.greenAccent),
                                             child: Container(
                                                 padding: EdgeInsets.fromLTRB(
                                                     5, 5, 5, 5),
@@ -1007,13 +1010,13 @@ class PostView extends StatelessWidget {
                                                         fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.bold,
-                                                        color: Colors.white),
+                                                        color: Colors.black),
                                                   ),
                                                   DecoratedBox(
                                                       decoration:
                                                           const BoxDecoration(
-                                                              color:
-                                                                  Colors.green),
+                                                              color: Colors
+                                                                  .redAccent),
                                                       child: Container(
                                                         padding:
                                                             EdgeInsets.fromLTRB(
@@ -1094,14 +1097,15 @@ class PostView extends StatelessWidget {
                                           ? 1
                                           : 0,
                                   child: RaisedButton(
-                                      textColor: Colors.white,
+                                      textColor: Colors.black,
                                       color: (store.current['author'] ==
                                               store.userId)
-                                          ? Colors.green
+                                          ? Colors.greenAccent
                                           : Colors.transparent,
                                       child: (store.current['author'] ==
                                               store.userId)
-                                          ? Text('Delete')
+                                          ? Text('Delete',
+                                              style: TextStyle(fontSize: 18))
                                           : Text(''),
                                       onPressed: (store.userId ==
                                               store.current['author'])
@@ -1122,14 +1126,15 @@ class PostView extends StatelessWidget {
                                         ? 1
                                         : 0,
                                     child: RaisedButton(
-                                        textColor: Colors.white,
+                                        textColor: Colors.black,
                                         color: (store.current['author'] ==
                                                 store.userId)
-                                            ? Colors.green
+                                            ? Colors.greenAccent
                                             : Colors.transparent,
                                         child: (store.current['author'] ==
                                                 store.userId)
-                                            ? Text('Save')
+                                            ? Text('Save',
+                                                style: TextStyle(fontSize: 19))
                                             : Text(''),
                                         onPressed: (store.userId ==
                                                 store.current['author'])
@@ -1146,15 +1151,15 @@ class PostView extends StatelessWidget {
                     ),
                   ),
                   Container(
-                      padding: EdgeInsets.fromLTRB(20, 40, 20, 10),
+                      padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
                       child: Text(
                         'Comments',
                         textAlign: TextAlign.start,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
-                            fontSize: 24,
+                            fontSize: 25,
                             fontWeight: FontWeight.bold,
-                            color: Colors.green),
+                            color: Colors.greenAccent),
                       )),
                   Container(
                     height: 250,
@@ -1173,16 +1178,16 @@ class PostView extends StatelessWidget {
                             controller: text3,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
-                              labelText: 'Message',
+                              labelText: 'Comment',
                             ),
                           ),
                         ),
                         Container(
-                            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                            padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                             child: InkWell(
                               child: Icon(
                                 Icons.send,
-                                color: Colors.green,
+                                color: Colors.greenAccent,
                                 size: 50,
                               ),
                               onTap: () {
@@ -1248,7 +1253,7 @@ class CreatePost extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 36,
                             fontWeight: FontWeight.bold,
-                            color: Colors.green),
+                            color: Colors.greenAccent),
                       )),
                   Container(
                       padding: EdgeInsets.fromLTRB(20, 50, 20, 10),
@@ -1259,7 +1264,7 @@ class CreatePost extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.green),
+                            color: Colors.greenAccent),
                       )),
                   Container(
                     padding: EdgeInsets.all(10),
@@ -1279,7 +1284,7 @@ class CreatePost extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.green),
+                            color: Colors.greenAccent),
                       )),
                   Container(
                     padding: EdgeInsets.all(10),
@@ -1295,9 +1300,9 @@ class CreatePost extends StatelessWidget {
                       width: 160,
                       padding: EdgeInsets.fromLTRB(20, 60, 20, 0),
                       child: RaisedButton(
-                        textColor: Colors.white,
-                        color: Colors.green,
-                        child: Text('Create'),
+                        textColor: Colors.black,
+                        color: Colors.greenAccent,
+                        child: Text('Create', style: TextStyle(fontSize: 20)),
                         onPressed: () async {
                           print(ques.text);
                           await store.createPost(ques.text, descip.text);
