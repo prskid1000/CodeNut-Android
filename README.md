@@ -1,7 +1,16 @@
-# Template
+# CodeNut-Android
 ![All Contributors](https://img.shields.io/github/contributors/prskid1000/CPMath)
 ![Last Commit](https://img.shields.io/github/last-commit/prskid1000/Template)
-<br>A Template Repository
+
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/1.jpg?raw=true)
+
+![2](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/2.jpg?raw=true)
+
+![3](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/3.jpg?raw=true)
+
+![4](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/4.jpg?raw=true)
+
+![5](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/5.jpg?raw=true)
 
 
 ## Getting started
