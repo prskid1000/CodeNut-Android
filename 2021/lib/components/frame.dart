@@ -1,4 +1,4 @@
-import 'package:android_app/store/store.dart';
+import 'package:CodeNut/store/store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,7 +16,7 @@ class Frame extends StatelessWidget {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text("CE-Scanner"),
+            title: Text("CodeNut"),
             actions: <Widget>[
               IconButton(
                 icon: const Icon(Icons.lightbulb),
@@ -40,6 +40,14 @@ class Frame extends StatelessWidget {
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
                 label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.account_box_outlined),
+                label: 'Contributors',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.create),
+                label: 'Create',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.logout),

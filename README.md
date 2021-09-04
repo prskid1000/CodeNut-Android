@@ -2,15 +2,18 @@
 ![All Contributors](https://img.shields.io/github/contributors/prskid1000/CPMath)
 ![Last Commit](https://img.shields.io/github/last-commit/prskid1000/Template)
 
-![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/1.jpg?raw=true)
-
-![2](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/2.jpg?raw=true)
-
-![3](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/3.jpg?raw=true)
-
-![4](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/4.jpg?raw=true)
-
-![5](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/5.jpg?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/1.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/2.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/3.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/4.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/5.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/6.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/7.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/8.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/9.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/10.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/11.png?raw=true)
+![1](https://github.com/prskid1000/CodeNut-Android/blob/main/Preview/12.png?raw=true)
 
 
 ## Getting started

@@ -1,6 +1,9 @@
-import 'package:android_app/layouts/account.dart';
-import 'package:android_app/layouts/home.dart';
-import 'package:android_app/store/store.dart';
+import 'package:CodeNut/layouts/account.dart';
+import 'package:CodeNut/layouts/create.dart';
+import 'package:CodeNut/layouts/home.dart';
+import 'package:CodeNut/layouts/post.dart';
+import 'package:CodeNut/layouts/user.dart';
+import 'package:CodeNut/store/store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -35,7 +38,10 @@ void main() async {
           initialRoute: 'Account',
           routes: {
             'Account': (context) => Account(),
-            'Home': (context) => Home()
+            'Home': (context) => Home(),
+            'Create': (context) => CreatePost(),
+            'Post': (context) => Post(),
+            'Contributors': (context) => User(),
           },
           debugShowCheckedModeBanner: false,
         );
