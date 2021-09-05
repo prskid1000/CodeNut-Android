@@ -610,46 +610,79 @@ class Store extends ChangeNotifier {
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    (this.current['comments'][i]['author'] != this.userId)
-                        ? Opacity(
-                            opacity: 0,
-                          )
-                        : Container(
+                (this.current['comments'][i]['author'] != this.userId)
+                    ? Opacity(opacity: 0)
+                    : Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
                             height: 60,
-                            width: 160,
-                            padding: EdgeInsets.fromLTRB(50, 0, 20, 20),
+                            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                             child: RaisedButton(
-                              textColor: Colors.black,
-                              color: Colors.greenAccent,
-                              child: Text('Delete',
-                                  style: TextStyle(fontSize: 19)),
+                              onPressed: () => {saveComment(text.text, i)},
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(80.0)),
+                              padding: EdgeInsets.all(0.0),
+                              child: Ink(
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        Colors.green,
+                                        Colors.greenAccent
+                                      ],
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight,
+                                    ),
+                                    borderRadius: BorderRadius.circular(30.0)),
+                                child: Container(
+                                  constraints: BoxConstraints(
+                                      maxWidth: 100, minHeight: 50.0),
+                                  alignment: Alignment.center,
+                                  child: Text(
+                                    "Edit",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 15),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 60,
+                            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                            child: RaisedButton(
                               onPressed: () => {deleteComment(i)},
-                            )),
-                    (this.current['comments'][i]['author'] == this.userId)
-                        ? Container(
-                            height: 60,
-                            width: 110,
-                            padding: EdgeInsets.fromLTRB(5, 0, 20, 20),
-                            child: RaisedButton(
-                                textColor: Colors.black,
-                                color: Colors.greenAccent,
-                                child: Text('Save',
-                                    style: TextStyle(fontSize: 19)),
-                                onPressed: () => {saveComment(text.text, i)}),
-                          )
-                        : Opacity(opacity: 0),
-                  ],
-                ),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(80.0)),
+                              padding: EdgeInsets.all(0.0),
+                              child: Ink(
+                                decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        Colors.green,
+                                        Colors.greenAccent
+                                      ],
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight,
+                                    ),
+                                    borderRadius: BorderRadius.circular(30.0)),
+                                child: Container(
+                                  constraints: BoxConstraints(
+                                      maxWidth: 100, minHeight: 50.0),
+                                  alignment: Alignment.center,
+                                  child: Text(
+                                    "Delete",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 15),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
               ],
             )
           ],

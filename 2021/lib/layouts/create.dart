@@ -80,7 +80,8 @@ class CreatePost extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(30.0)),
                 child: Container(
-                  constraints: BoxConstraints(maxWidth: 150.0, minHeight: 50.0),
+                  constraints:
+                      BoxConstraints(maxWidth: width * 0.7, minHeight: 50.0),
                   alignment: Alignment.center,
                   child: Text(
                     "Create",

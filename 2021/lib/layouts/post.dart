@@ -103,7 +103,11 @@ class Post extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
                 ),
                 InkWell(
-                  child: Icon(Icons.thumb_up, color: Colors.white, size: 28),
+                  child: Icon(Icons.thumb_up,
+                      color: store.theme.compareTo('dark') == 0
+                          ? Colors.white
+                          : Colors.black,
+                      size: 28),
                   onTap: () {
                     store.upvoteq();
                   },
@@ -112,7 +116,11 @@ class Post extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
                 ),
                 InkWell(
-                  child: Icon(Icons.thumb_down, color: Colors.white, size: 28),
+                  child: Icon(Icons.thumb_down,
+                      color: store.theme.compareTo('dark') == 0
+                          ? Colors.white
+                          : Colors.black,
+                      size: 28),
                   onTap: () {
                     store.downvoteq();
                   },
